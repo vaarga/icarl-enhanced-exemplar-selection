@@ -1,26 +1,26 @@
 # iCaRL Enhanced Exemplar Selection
 
 > **Note**: This repository contains the source code for the research paper titled "Class-Incremental Learning Enhanced:
-> Assessing New Exemplar Selection Strategies in the iCaRL Framework", presented at SYNASC 2024 and accepted for 
-> publication in the IEEE post-proceedings. This project was also used as the final project for my Master's degree, 
-> specializing in Artificial Intelligence and Distributed Computing, at West University of Timișoara (2022/2023 to 
-> 2023/2024).
+> Assessing New Exemplar Selection Strategies in the iCaRL Framework", presented at SYNASC 2024 and published in the
+> IEEE post-proceedings (DOI: [10.1109/SYNASC65383.2024.00045](https://doi.org/10.1109/synasc65383.2024.00045)). This
+> project was also used as the final project for my Master's degree, specializing in Artificial Intelligence and
+> Distributed Computing, at West University of Timișoara (2022/2023 to 2023/2024).
 
-## Week 19 (09.02 - 09.08)
+## Week 19 (2024.09.02 - 2024.09.08)
 
 We have modified the code to measure the execution time of each task (including the 
 exemplar selection part separately). In the end, we output the overall execution time 
 of the executed algorithm. Furthermore, we have rerun all the experiments and redone 
 the graphical representation for the results in the notebooks.
 
-## Week 18 (06.24 - 06.30)
+## Week 18 (2024.06.24 - 2024.06.30)
 
 This week (or more precisely today), we refactored how the density selection 
 criterion was implemented, which required us to rerun the experiments. Additionally,
 we have implemented a visualization for all exemplar selections. Lastly, we made 
 small refactorings to the folder and file structures of the repository.
 
-## Week 17 (06.17 - 06.23)
+## Week 17 (2024.06.17 - 2024.06.23)
 
 We have made several modifications this week: adjusted the code to handle various 
 datasets such as MNIST, FashionMNIST and Food-101, not just CIFAR-100. Various 
@@ -29,7 +29,7 @@ Another significant modification was the addition and visualization of the resul
 from an experimental analysis conducted last year with the assistance of the 
 publicly available Framework for Analysis of Class-Incremental Learning (FACIL).
 
-## Week 16 (06.10 - 06.16)
+## Week 16 (2024.06.10 - 2024.06.16)
 
 We have partially modified the code in the `ResNet32` file, now named
 `ResNet32iCaRL`. We simplified the code by using functions from the original 
@@ -38,7 +38,7 @@ architecture of the neural network (without affecting its functionality).
 Additionally, several experiments were run to test our exemplar selection methods 
 with 5 and 20 tasks.
 
-## Week 15 (06.03 - 06.09)
+## Week 15 (2024.06.03 - 2024.06.09)
 
 This week, we have finalized the refactoring of the code. Furthermore, we have 
 added a `requirements.txt` file, which helps make the code more reproducible by 
@@ -46,7 +46,7 @@ specifying the exact versions of the packages we used. Lastly, we have created a
 logging system (different from simple printing in the terminal). This is a key 
 part to ensure our results can be tracked and compared later on.
 
-## Week 14 (05.27 - 06.02)
+## Week 14 (2024.05.27 - 2024.06.02)
 
 This week, we found several possible improvements, especially in the different 
 selection criteria parts of the code. We were able to achieve this while still 
@@ -55,7 +55,7 @@ primarily on the `select_exemplars_by_density` and `select_exemplars_with_kmeans
 functions. We'll leave the `ResNet32` class for last, tackling it only if time
 permits.
 
-## Week 13 (05.20 - 05.26)
+## Week 13 (2024.05.20 - 2024.05.26)
 
 We have continued with the refactoring of the code. In addition to enhancing the 
 readability of the code, we have also managed to make some minor optimizations. We 
@@ -63,7 +63,7 @@ will continue to refactor the remaining two functions: `select_exemplars_by_dens
 and `select_exemplars_with_kmeans` (we have already started the latter but need to 
 finish it). Furthermore, we will try to rewrite/optimize the `ResNet32` class.
 
-## Week 12 (05.13 - 05.19)
+## Week 12 (2024.05.13 - 2024.05.19)
 
 This week, we have refactored/rearranged the code in a manner that almost all the 
 functions are in their own files. This makes the code easier to read and more 
@@ -78,7 +78,7 @@ median = [0.5815, 0.4140, 0.3245, 0.2962, 0.3037, 0.2723, 0.2553, 0.2583, 0.2348
 
 density = [0.5745, 0.4170, 0.3223, 0.2976, 0.2958, 0.2617, 0.2491, 0.2518, 0.2387]
 
-## Week 11 (05.06 - 05.12)
+## Week 11 (2024.05.06 - 2024.05.12)
 
 We have replaced the ResNet model with our own implementation. Our implementation 
 not only simplifies the code but also exponentially improves the inference time 
@@ -86,7 +86,7 @@ when extracting features to determine the mean of the features for each class,
 subsequently aiding in the selection of exemplars that best represent the class
 (define_class_means).
 
-## Week 10 (04.29 - 05.05)
+## Week 10 (2024.04.29 - 2024.05.05)
 
 This week, we cleaned up all the unused files from the original PyCIL framework, 
 in which we conducted all the preliminary proof of concept experiments. Currently, 
@@ -95,14 +95,14 @@ we have two implementations: the `class-incremental-learning` and
 aforementioned implementation as its implementation and hyperparameters are 
 closer to the original iCaRL paper implementation.
 
-## Week 9 (04.22 - 04.28)
+## Week 9 (2024.04.22 - 2024.04.28)
 
 We have reorganized and refactored the structure of the folders and files, as 
 well as some parts of the code, to make them more readable and structured. Next
 week, we will continue with the refactoring, as our ultimate goal is to make the 
 code as easily understandable as possible.
 
-## Week 8 (04.15 - 04.21)
+## Week 8 (2024.04.15 - 2024.04.21)
 
 This week, we reimplemented the iCaRL method from scratch in order to reproduce 
 results that are even closer to those of the original paper. As we can see, the 
@@ -114,7 +114,7 @@ Herding: [0.7860, 0.5415, 0.4210, 0.3320, 0.3000]
 
 K-Means: [0.7850, 0.5760, 0.4537, 0.3623, 0.3266]
 
-## Week 7 (04.08 - 04.14)
+## Week 7 (2024.04.08 - 2024.04.14)
 
 The main contribution to the codebase this week was the creation of a logging 
 system that not only displays results in real time in the console but also saves 
@@ -124,14 +124,15 @@ order to reproduce the results of the approach. These settings are actually the
 final results from last week's attempts (Week 6). Furthermore, we have corrected 
 some of the errors and warnings that appeared during the runtime of the exemplar 
 selection using the K-Means clustering algorithm.
-## Week 6 (04.01 - 04.07)
+
+## Week 6 (2024.04.01 - 2024.04.07)
 
 This week, there were no significant changes made to the code because we focused 
 more on trying to reproduce the results from the original iCaRL method's paper. 
 These attempts mainly involved adjusting the hyperparameters of our model to 
 match those specified in the iCaRL paper.
 
-## Week 5 (03.25 - 03.31)
+## Week 5 (2024.03.25 - 2024.03.31)
 
 We have implemented two new methods for exemplar selection:
 
@@ -148,14 +149,14 @@ accurately.
 Using these two new methods, we will conduct several experiments to see if we can 
 achieve higher accuracies.
 
-## Week 4 (03.18 - 03.24)
+## Week 4 (2024.03.18 - 2024.03.24)
 
 We have implemented our own method for exemplar selection using K-means clustering;
 however, this function is currently not in use. Furthermore, we have made all the
 necessary modifications to ensure the reproducibility of our experiments. This
 includes setting the seeds for all the packages we have used.
 
-## Week 3 (03.11 - 03.17)
+## Week 3 (2024.03.11 - 2024.03.17)
 
 We have continued to write our own implementation of the iCaRL method. The current 
 state of the code theoretically includes all components of iCaRL, but we have
@@ -163,7 +164,7 @@ encountered some issues. More precisely, when we use the nearest-mean-of-exempla
 the classification is far worse than it is with the base neural network. The 
 execution time is also slow, so it could be improved, but it is not a must.
 
-## Week 2 (03.04 - 03.10)
+## Week 2 (2024.03.04 - 2024.03.10)
 
 We have continued to write our own implementation of the iCaRL method. The current 
 state of the code does not yet contain parts of the iCaRL method, nor does it 
@@ -175,7 +176,7 @@ for 5 tasks (each task containing 20 classes) on the CIFAR-100 dataset is as fol
 [36.6, 17.0, 9.83, 9.24, 6.85]. We will use these values as an approximate baseline 
 for future implementations and testing.**
 
-## Week 1 (02.26 - 03.03)
+## Week 1 (2024.02.26 - 2024.03.03)
 
 We have changed the class-incremental learning framework that we have used for 
 experiments until now, as it did not contain the FOSTER method, which we will 
